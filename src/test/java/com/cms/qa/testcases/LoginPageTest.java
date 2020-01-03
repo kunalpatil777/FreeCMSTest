@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 1)
 	public void LoginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Log In ‹ Micromixer — WordPress");
+		Assert.assertEquals(title, "Log In ‹ opensourcecms — WordPress");
 	}
 
 	@Test(priority = 2)
