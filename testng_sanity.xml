@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FREE CMS Application Test Automation Test Suite">
+	<test name="Free CMS Application Test Cases">
+		<classes>
+			<class name="com.cms.qa.testcases.LoginPageTest" />
+			<class name="com.cms.qa.testcases.HomePageTest" />
+	   	
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
