@@ -1,12 +1,13 @@
 
 package com.cms.qa.base;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -21,12 +22,14 @@ public class TestBase {
 	public static Properties prop;
 	static EventFiringWebDriver e_driver;
 	static WebEventListener eventListener;
+	//public static Logger log;
 
 	public TestBase() {
 		try {
 			prop = new Properties();
 			/*
 			 * String path =
+			 * 
 			 * "/src/main/java/com/cms/qa/config/config.properties"; String str
 			 * = System.getProperty("user.dir"+path);
 			 */
@@ -38,6 +41,10 @@ public class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		/*log = Logger.getLogger(TestBase.class);
+		PropertyConfigurator.configure("E:\\workspace2\\FirstJBKTest\\src\\main\\resources\\log4j.properties");
+*/
 	}
 
 	public static HomePage intialization() {
